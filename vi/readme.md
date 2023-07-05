@@ -1,17 +1,36 @@
-# Correction : utilisation de la commande vi
-1. Utilisez `VI` pour créer un fichier de texte simple qui contient votre nom, votre âge et votre ville natale. Ensuite, utilisez les commandes de base pour ajouter, supprimer et modifier le contenu du fichier.
-    *  vous pouvez utiliser la commande `:sort` pour trier les lignes du fichier dans l'ordre alphabétique. Assurez-vous de sauvegarder le fichier après avoir effectué la modification en utilisant la commande `:wq`.
+# utilisation de la commande vi
+## Fichier
+Soit le fichier `test.txt` contenant le texte suivant :
+```
+Mon fichier d'exemple contenant du texte.
 
-2. Utilisez `VI` pour éditer un fichier de configuration pour changer les paramètres d'un service spécifique sur votre système (par exemple, changer le port utilisé par un serveur web).
-    * utiliser les commandes de base de VI pour rechercher et remplacer les paramètres spécifiques dans le fichier de configuration. Assurez-vous de sauvegarder le fichier après avoir effectué la modification en utilisant la commande `:wq`.
-    * par exemple changer le port d'un fichier httpd.conf `:%s/port = 80/port = 8080/g` Nouveau port 8080 remplace l'ancien port 80, cela permet de sauvegarder les modifications en utilisant la commande : `:wq`
+Ceci est la première ligne.
+Ceci est la deuxième ligne.
+Ceci est la troisième ligne.
 
+Merci d'utiliser l'éditeur Vi !
+```
 
-3. Utilisez `VI` pour créer un fichier de script qui automatise la sauvegarde de fichiers dans un emplacement spécifique en utilisant la commande cp.
-    * utiliser la commande `cp` pour copier les fichiers à l'emplacement spécifié, puis utiliser un cron pour automatiser la sauvegarde à des intervalles spécifiés.
-    * `cp /chemin/vers/fichiers /chemin/vers/emplacement/de/sauvegarde`
+## Questions 
+1. Ouvrez le fichier avec Vi.
+      * La commande pour ouvrir un fichier existant dans Vi est : vi `test.txt`.
 
-4. Utilisez `VI` pour ouvrir un fichier de journal et rechercher des entrées d'erreur spécifiques en utilisant la commande grep.
-    * utiliser la commande `grep` pour rechercher des entrées d'erreur spécifiques dans le fichier de journal. Il est important de vérifier que les entrées d'erreur ont été correctement
-    * `grep "erreur" /chemin/vers/fichier/de/journal`
+2. Placez le curseur à la fin du fichier.
+      * Pour déplacer le curseur à la fin du fichier dans Vi, utilisez la commande : `G`.
+
+3. Ajoutez une nouvelle ligne après la troisième ligne.
+      * Pour insérer une nouvelle ligne après la position actuelle du curseur dans Vi, utilisez la commande : `o`.
+
+4. Supprimez la deuxième ligne.
+      * La commande pour supprimer une ligne entière dans Vi est : `dd`.
+
+5. Recherchez la première occurrence du mot "utiliser" dans le fichier.
+      * Pour rechercher un mot spécifique dans Vi, utilisez la commande : `/utiliser`.
+
+6. Remplacez toutes les occurrences du mot "Ceci" par "Cela".
+      * Pour remplacer une chaîne de caractères dans tout le fichier, utilisez la commande : :`%s/Ceci/Cela/g`.
+
+7. Enregistrez les modifications et quittez Vi.
+      * Pour enregistrer les modifications dans Vi, utilisez la commande : `:w`.
+      * Pour quitter Vi, utilisez la commande : `:q`.
 
