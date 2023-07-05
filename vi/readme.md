@@ -1,10 +1,34 @@
 # utilisation de la commande vi
-1. Utilisez `VI` pour créer un fichier de texte simple qui contient votre nom, votre âge et votre ville natale. Ensuite, utilisez les commandes de base pour ajouter, supprimer et modifier le contenu du fichier.
+## Fichier
+Soit le fichier `test.txt` contenant le texte suivant :
+```
+Mon fichier d'exemple contenant du texte.
 
-2. Utilisez `VI` pour créer un fichier de script shell qui affiche un message de bienvenue à l'utilisateur en utilisant la commande echo.
+Ceci est la première ligne.
+Ceci est la deuxième ligne.
+Ceci est la troisième ligne.
 
-3. Utilisez `VI` pour éditer un fichier de configuration pour changer les paramètres d'un service spécifique sur votre système (par exemple, changer le port utilisé par un serveur web).
+Merci d'utiliser l'éditeur Vi !
+```
 
-4. Utilisez `VI` pour créer un fichier de script qui automatise la sauvegarde de fichiers dans un emplacement spécifique en utilisant la commande cp.
+## Questions 
+1. Ouvrez le fichier avec Vi.
+    * Quelle est la commande pour ouvrir un fichier existant dans Vi ?
+    
+2. Placez le curseur à la fin du fichier.
+    * Quelle commande vous permet de déplacer le curseur à la fin du fichier dans Vi ?
 
-5. Utilisez `VI` pour ouvrir un fichier de journal et rechercher des entrées d'erreur spécifiques en utilisant la commande grep.
+3. Ajoutez une nouvelle ligne après la troisième ligne.
+    * Quelle est la commande pour insérer une nouvelle ligne après la position actuelle du curseur dans Vi ?
+
+4. Supprimez la deuxième ligne.
+    * Quelle commande permet de supprimer une ligne entière dans Vi ?
+
+5. Recherchez la première occurrence du mot "utiliser" dans le fichier.
+    * Quelle est la commande pour rechercher un mot spécifique dans Vi ?
+
+6. Remplacez toutes les occurrences du mot "Ceci" par "Cela".
+    * Quelle commande vous permet de remplacer une chaîne de caractères dans tout le fichier ?
+
+7. Enregistrez les modifications et quittez Vi.
+    * Quelles sont les commandes pour enregistrer et quitter Vi ?
